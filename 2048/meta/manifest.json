@@ -1,0 +1,16 @@
+{
+  "name": "2048 Windows 10",
+  "short_name": "2048 Windows 10",
+  "description": "Join the numbers and get to the 2048 tile!",
+  "lang": "en_US",
+  "start_url": "https://windowsapphost.github.io/2048/",
+  "display": "fullscreen",
+  "theme_color": "#f2c500",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "400x400",
+      "type": "image/png"
+    }
+  ]
+}
