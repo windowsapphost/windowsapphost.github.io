@@ -26,15 +26,35 @@
 <link rel="icon" type="image/png" sizes="400x400" href="images/logo.png">
 <link rel="apple-touch-icon" type="image/png" sizes="400x400" href="images/logo.png">
 
+
+ <script>
+ 
+
+
+
+
+
+
+// When the user clicks the button, open the modal 
+function show() {
+    document.getElementById('myModal').style.display = "block";
+}
+
+
+
+
+ </script> 
+
+
+
 	
 </head>
-<body>
+<body onload="show()">
   <div class="container">
     <div class="heading">
 
 	
 
-	
 	
 	<h1 class="title">2048</h1>
 	
@@ -48,12 +68,31 @@
 	  
 	  
 	  
+	  <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+   <span class="close" id="close">&times;</span>
+  	 <a href="https://goo.gl/f1YLvE" target="_blank"><img src="images/banner.jpg"></a>
+  </div>
+
+</div>
+	  
+<script>
+
+document.getElementById('close').onclick = function() {
+    document.getElementById('myModal').style.display = "none";
+}
+</script>
+	
+	  
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 2048TOP -->
 <ins class="adsbygoogle"
       style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px"
      data-ad-client="ca-pub-9061606203043193"
-     data-ad-slot="8033409409"</ins>
+     data-ad-slot="8033409409"
+     data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -149,6 +188,8 @@ d
 
 </script>
   
+  
+
   
 </body>
 </html>
