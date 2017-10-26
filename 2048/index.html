@@ -5,15 +5,16 @@
   <title>2048</title>
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
-
-
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-	
-<!--<link rel="manifest" href="manifest.json">-->
-
-<meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+  
+  <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="application-name" content="2048 Windows 10">
 <meta name="apple-mobile-web-app-title" content="2048 Windows 10">
@@ -25,82 +26,55 @@
 
 <link rel="icon" type="image/png" sizes="400x400" href="images/logo.png">
 <link rel="apple-touch-icon" type="image/png" sizes="400x400" href="images/logo.png">
+  
+  
 
-
- <script>
- 
-
-
-
-
-
-
-// When the user clicks the button, open the modal 
-function show() {
-    document.getElementById('myModal').style.display = "block";
-}
-
-
-
-
- </script> 
-
-
-
-	
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
-<body onload="show()">
+
+  <script>
+  
+  function resize() {
+
+    document.getElementsByTagName("BODY")[0].onresize = function() {
+
+    location.reload();
+
+    };
+
+
+}
+  </script>
+
+<body onload="resize()">
   <div class="container">
     <div class="heading">
-
-	
-
-	
-	<h1 class="title">2048</h1>
-	
-	
+	  
+	   <a class="restart-button">New Game</a>
       <div class="scores-container">
+	  
         <div class="score-container">0</div>
         <div class="best-container">0</div>
-			<a class="restart-button">New Game</a>
-		
       </div>
 	  
 	  
 	  
-	  <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-   <span class="close" id="close">&times;</span>
-  	 <a href="https://goo.gl/f1YLvE" target="_blank"><img src="images/banner.jpg"></a>
-  </div>
-
-</div>
-	  
-<script>
-
-document.getElementById('close').onclick = function() {
-    document.getElementById('myModal').style.display = "none";
-}
-</script>
-	
-	  
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+<div class="ads-top">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 2048TOP -->
 <ins class="adsbygoogle"
-      style="display:inline-block;min-width:400px;max-width:970px;width:100%;height:90px"
+      style="display:inline-block;min-width:280px;max-width:500px;width:100%;height:90px"
      data-ad-client="ca-pub-9061606203043193"
      data-ad-slot="8033409409"
      data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-	  
-    </div>
 
-      
-      
+</div>	  
 
 
     <div class="game-container">
@@ -143,31 +117,24 @@ document.getElementById('close').onclick = function() {
 
       </div>
     </div>
-
-	  
-	  <div class="ads">
-
+<div class="ads-bottom">
 	
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 2048 -->
 <ins class="adsbygoogle"
-     style="display:block"
+     style="display:inline-block;min-width:280px;max-width:500px;width:100%;height:90px"
      data-ad-client="ca-pub-9061606203043193"
      data-ad-slot="6136431869"
      data-ad-format="auto"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-	  </div> 
-	  
-    <p class="game-explanation">
-	  <p class="game-intro">Do you like the Game? <strong><a href="ms-windows-store://review/?ProductId=9N1JNHBGZHM8">Please review it in the Store</a>
-    </p>
-
+</div>	
 
   </div>
+  
 
-	
+
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
   <script src="js/animframe_polyfill.js"></script>
@@ -179,8 +146,7 @@ document.getElementById('close').onclick = function() {
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
   
-  
-  <script>
+    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -191,8 +157,6 @@ document.getElementById('close').onclick = function() {
 
 </script>
   
-  
-
   
 </body>
 </html>

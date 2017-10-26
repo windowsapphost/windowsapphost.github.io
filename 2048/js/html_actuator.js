@@ -7,6 +7,7 @@ function HTMLActuator() {
   this.score = 0;
 }
 
+
 HTMLActuator.prototype.actuate = function (grid, metadata) {
   var self = this;
 
