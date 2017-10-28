@@ -138,12 +138,3 @@ HTMLActuator.prototype.clearMessage = function () {
   this.messageContainer.classList.remove("game-won");
   this.messageContainer.classList.remove("game-over");
 };
-
-
-var appView = Windows.UI.ViewManagement.ApplicationView.getForCurrentView();
-appView.titleBar.backgroundColor = Windows.UI.Colors.black; // or {a: 255, r: 0, g: 0, b: 0}
-appView.titleBar.inactiveBackgroundColor = Windows.UI.Colors.black;
-appView.titleBar.buttonBackgroundColor = Windows.UI.Colors.black;
-appView.titleBar.buttonHoverBackgroundColor = Windows.UI.Colors.black;
-appView.titleBar.buttonPressedBackgroundColor = Windows.UI.Colors.black;
-appView.titleBar.buttonInactiveBackgroundColor = Windows.UI.Colors.black;
