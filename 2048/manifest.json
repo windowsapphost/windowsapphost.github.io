@@ -1,0 +1,42 @@
+{
+  "background_color": "#ffffff",
+  "description": "Welcome to 2048™ Game, the ultimate puzzle challenge that will test your strategic thinking and numerical skills! Dive into the world of addictive gameplay, where merging tiles to reach the elusive 2048 tile is your primary goal.",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "name": "2048™ Game",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "2048™ Game",
+  "start_url": "/",
+  "theme_color": "#f2c500",
+  "categories": [
+    "games"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "type": "image/png",
+      "sizes": "400x400"
+    },
+    {
+      "src": "favicon.ico"
+    },
+    {
+      "src": "meta/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "en",
+  "iarc_rating_id": "8541a838-8937-47ce-8dac-1b7b470f1a11",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "windows",
+      "url": "https://www.microsoft.com/en-us/p/messenger-soccer/9ncfbv62lr46",
+      "id": "9NCFBV62LR46"
+    }
+  ]
+}
